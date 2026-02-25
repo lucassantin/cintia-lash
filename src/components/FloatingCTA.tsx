@@ -19,7 +19,7 @@ const FloatingCTA = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.a
-          href="https://wa.me/554892018071"
+          href="https://wa.me/554891308875"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 100, x: "-50%" }}

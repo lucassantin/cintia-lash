@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero.png";
 
 const HeroSection = () => {
   return (
@@ -56,7 +56,7 @@ const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Técnicas personalizadas por Vanessa para um olhar marcante, natural e inesquecível.
+              Técnicas personalizadas por Cintia Quadros para um olhar marcante, natural e inesquecível.
             </motion.p>
 
             <motion.div
@@ -65,7 +65,7 @@ const HeroSection = () => {
               transition={{ delay: 0.7 }}
             >
               <a
-                href="https://wa.me/554892018071"
+                href="https://wa.me/554891308875"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp inline-flex items-center gap-3"

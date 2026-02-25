@@ -30,7 +30,7 @@ const FooterSection = () => {
               viewport={{ once: true }}
             >
               <h3 className="text-2xl font-serif font-semibold mb-4">
-                Vanessa <span className="text-primary">Lash Designer</span>
+                Cintia <span className="text-primary">Lash Designer</span>
               </h3>
               <p className="text-background/70 leading-relaxed">
                 Transformando olhares e elevando a autoestima de mulheres que merecem se sentir lindas todos os dias.
@@ -48,24 +48,25 @@ const FooterSection = () => {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="https://wa.me/554892018071"
+                    href="https://wa.me/554891308875"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    (48) 99201-8071
+                    (48) 9 9130-8875
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/cintiaquadroslashes/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
                   >
                     <Instagram className="w-4 h-4" />
-                    @vanessa.lashdesigner
+                    cintiaquadroslashes
+
                   </a>
                 </li>
                 <li className="flex items-center gap-3 text-background/70">
@@ -87,7 +88,7 @@ const FooterSection = () => {
                 Transforme seu olhar hoje mesmo. Horários limitados disponíveis.
               </p>
               <a
-                href="https://wa.me/554892018071"
+                href="https://wa.me/554891308875"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors"
@@ -101,7 +102,15 @@ const FooterSection = () => {
           {/* Bottom */}
           <div className="border-t border-background/10 pt-8">
             <p className="text-center text-background/50 text-sm flex items-center justify-center gap-1">
-              Feito com <Heart className="w-4 h-4 text-primary fill-primary" /> por Vanessa Lash Designer
+              Feito com <Heart className="w-4 h-4 text-primary fill-primary" /> por{" "}
+              <a
+                href="https://wa.me/5548988247011"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-primary transition-colors"
+              >
+                Lucas Santin
+              </a>
             </p>
           </div>
         </div>

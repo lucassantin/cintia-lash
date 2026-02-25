@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { Star, Quote, Heart, Award, Gem } from "lucide-react";
-import vanessaPortrait from "@/assets/vanessa-portrait.jpg";
+import vanessaPortrait from "@/assets/about.png";
 
 const testimonials = [
   {
     name: "Carolina M.",
-    text: "Vanessa transformou completamente meu olhar! Acordo me sentindo linda todos os dias.",
+    text: "Cintia transformou completamente meu olhar! Acordo me sentindo linda todos os dias.",
     rating: 5,
   },
   {
@@ -43,7 +43,7 @@ const AboutSection = () => {
               
               <img
                 src={vanessaPortrait}
-                alt="Vanessa - Lash Designer"
+                alt="Cintia - Lash Designer"
                 className="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-elegant"
               />
               
@@ -86,7 +86,7 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Com anos de experiência e uma paixão inabalável pela estética, Vanessa não apenas aplica cílios; 
+              Com anos de experiência e uma paixão inabalável pela estética, Cintia não apenas aplica cílios; 
               ela <span className="text-foreground font-medium">desenha olhares</span>. Especialista em visagismo, 
               ela domina a arte de harmonizar a extensão com os traços únicos do seu rosto.
             </p>

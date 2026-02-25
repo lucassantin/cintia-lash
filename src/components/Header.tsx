@@ -6,6 +6,7 @@ const navLinks = [
   { name: "Início", href: "#" },
   { name: "Sobre", href: "#sobre" },
   { name: "Serviços", href: "#servicos" },
+  { name: "Cursos", href: "#cursos" },
   { name: "Dúvidas", href: "#faq" },
   { name: "Contato", href: "#contato" },
 ];
@@ -39,7 +40,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <span className="text-xl sm:text-2xl font-serif font-semibold">
-              Vanessa <span className="text-primary">Lash</span>
+              Cintia <span className="text-primary">Lasher</span>
             </span>
           </a>
 
@@ -59,7 +60,7 @@ const Header = () => {
 
           {/* CTA Button */}
           <a
-            href="https://wa.me/554892018071"
+            href="https://wa.me/554891308875"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
@@ -103,7 +104,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/554892018071"
+              href="https://wa.me/554891308875"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary w-full flex items-center justify-center gap-2 mt-4"

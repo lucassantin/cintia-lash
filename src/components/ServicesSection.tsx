@@ -12,12 +12,16 @@ import {
 import serviceClassico from "@/assets/service-classico.jpg";
 import serviceVolume from "@/assets/service-volume.jpg";
 import serviceLifting from "@/assets/service-lifting.jpg";
+import russo from "@/assets/services/russo.png";
+import brasileiro from "@/assets/services/brasileiro.png";
+import sobrancelha from "@/assets/services/sobrancelha.png";
 
 interface Service {
   id: number;
   name: string;
   duration: string;
   price: string;
+  maintenancePrice?: string;
   image: string;
   description: string;
   cares: string[];
@@ -26,9 +30,86 @@ interface Service {
 const services: Service[] = [
   {
     id: 1,
+    name: "Volume Brasileiro",
+    duration: "2h00",
+    price: "R$ 140,00",
+    maintenancePrice: "R$ 100,00",
+    image: brasileiro,
+    description:
+      "Técnica que utiliza fios em formato de Y, proporcionando um volume elegante e marcante sem perder a leveza, com excelente retenção.",
+    cares: [
+      "Evite água e vapor nas primeiras 24h",
+      "Não use produtos oleosos na região dos olhos",
+      "Penteie os cílios diariamente com escovinha",
+      "Lave diariamente com shampoo neutro (após 24h)",
+    ],
+  },
+  {
+    id: 2,
+    name: "Volume Egípcio",
+    duration: "2h00",
+    price: "R$ 160,00",
+    maintenancePrice: "R$ 110,00",
+    image: russo,
+    description:
+      "Utiliza fios em formato de W, garantindo um olhar preenchido, mais escurinho e com bastante destaque.",
+    cares: [
+      "Evite água e vapor nas primeiras 24h",
+      "Durma de barriga para cima se possível",
+      "Evite esfregar os olhos",
+      "Lave diariamente com shampoo neutro",
+    ],
+  },
+  {
+    id: 8,
+    name: "Design Personalizado",
+    duration: "30min",
+    price: "R$ 35,00",
+    image: sobrancelha,
+    description:
+      "Mapeamento facial estratégico para encontrar o formato ideal de sobrancelha para o seu tipo de rosto, valorizando seus traços.",
+    cares: [
+      "Evite exposição solar excessiva no dia",
+      "Evite o uso de ácidos ou esfoliantes na região nos primeiros dias",
+    ],
+  },
+  {
+    id: 3,
+    name: "Volume Fox Eyes",
+    duration: "2h00",
+    price: "R$ 160,00",
+    maintenancePrice: "R$ 110,00",
+    image: serviceVolume,
+    description:
+      "Técnica focada em alongar o olhar, concentrando fios maiores no canto externo para um efeito delineado gatinho super charmoso.",
+    cares: [
+      "Evite água nas primeiras 24h",
+      "Não puxe ou esfregue as extensões",
+      "Penteie os cílios diariamente",
+      "Higienize adequadamente todos os dias",
+    ],
+  },
+  {
+    id: 4,
+    name: "Mega Volume",
+    duration: "2h30",
+    price: "R$ 190,00",
+    maintenancePrice: "R$ 140,00",
+    image: serviceVolume,
+    description:
+      "Para quem ama cílios super preenchidos e dramáticos. Fios ultrafinos criando 'fans' densos para um resultado extremamente impactante.",
+    cares: [
+      "Evite água nas primeiras 24h",
+      "Não use máscara de cílios (rímel)",
+      "Mantenha a higienização em dia para evitar acúmulos",
+      "Penteie delicadamente",
+    ],
+  },
+  {
+    id: 5,
     name: "Fio a Fio Clássico",
     duration: "1h30",
-    price: "R$ 150",
+    price: "R$ 120,00",
     image: serviceClassico,
     description:
       "A técnica clássica que valoriza a naturalidade. Cada cílio natural recebe uma extensão, criando um efeito de máscara de cílios permanente, perfeito para o dia a dia.",
@@ -36,37 +117,63 @@ const services: Service[] = [
       "Evite água nas primeiras 24h",
       "Não use produtos oleosos na região dos olhos",
       "Penteie os cílios diariamente com escovinha",
-      "Manutenção recomendada a cada 3 semanas",
     ],
   },
   {
-    id: 2,
-    name: "Volume Russo",
-    duration: "2h00",
-    price: "R$ 200",
-    image: serviceVolume,
-    description:
-      "Para quem deseja um olhar mais marcante e glamouroso. Múltiplas extensões ultrafinas são aplicadas em cada cílio natural, criando volume e densidade impressionantes.",
-    cares: [
-      "Evite água nas primeiras 48h",
-      "Durma de barriga para cima se possível",
-      "Evite esfregar os olhos",
-      "Manutenção recomendada a cada 2-3 semanas",
-    ],
-  },
-  {
-    id: 3,
+    id: 6,
     name: "Lash Lifting",
     duration: "1h00",
-    price: "R$ 120",
+    price: "R$ 120,00",
     image: serviceLifting,
     description:
-      "Realça os cílios naturais através de uma curvatura permanente. Ideal para quem prefere um look natural sem a necessidade de extensões.",
+      "Realça os cílios naturais através de uma curvatura permanente e tintura. Ideal para quem prefere um look natural sem a necessidade de extensões.",
     cares: [
       "Evite água nas primeiras 24h",
-      "Não use curvador de cílios",
+      "Não use curvador de cílios (curvex)",
       "Pode usar máscara de cílios normalmente após 24h",
       "Duração média de 6-8 semanas",
+    ],
+  },
+  {
+    id: 7,
+    name: "Brow Lamination",
+    duration: "1h00",
+    price: "R$ 100,00",
+    image: serviceLifting,
+    description:
+      "Técnica que alinha os fios das sobrancelhas, dando um efeito de mais volume, espessura e um preenchimento natural super moderno.",
+    cares: [
+      "Evite molhar nas primeiras 24h",
+      "Penteie os fios diariamente na direção desejada",
+      "Mantenha a região hidratada",
+    ],
+  },
+  {
+    id: 9,
+    name: "Design com Henna",
+    duration: "45min",
+    price: "R$ 50,00",
+    image: serviceClassico,
+    description:
+      "Design personalizado aliado à aplicação de henna para cobrir falhas, dar volume e realçar o olhar com um sombreamento perfeito.",
+    cares: [
+      "Evite lavar com sabonete agressivo no primeiro dia",
+      "Evite esfregar ou usar demaquilante bifásico na região",
+      "A durabilidade depende do tipo de pele (peles oleosas duram menos)",
+    ],
+  },
+  {
+    id: 10,
+    name: "Epilação Egípcia Buço",
+    duration: "15min",
+    price: "R$ 20,00",
+    image: serviceClassico,
+    description:
+      "Remoção dos pelos do buço utilizando linha. Uma técnica suave, que não agride a pele e arranca os fios pela raiz, retardando o crescimento.",
+    cares: [
+      "Use protetor solar diariamente",
+      "Evite exposição direta ao sol logo após o procedimento",
+      "Não utilize produtos com ácidos na região logo após",
     ],
   },
 ];
@@ -126,7 +233,7 @@ const ServicesSection = () => {
 
       {/* Service Detail Dialog */}
       <Dialog open={!!selectedService} onOpenChange={() => setSelectedService(null)}>
-        <DialogContent className="sm:max-w-lg bg-background/95 backdrop-blur-xl border-border/50">
+        <DialogContent className="sm:max-w-lg bg-background/95 backdrop-blur-xl border-border/50 max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle className="text-2xl font-serif">{selectedService?.name}</DialogTitle>
             <DialogDescription className="sr-only">
@@ -152,6 +259,13 @@ const ServicesSection = () => {
                 </span>
               </div>
 
+              {selectedService.maintenancePrice && (
+                <div className="bg-primary/10 border border-primary/20 rounded-lg p-3 flex justify-between items-center">
+                  <span className="text-sm font-medium text-foreground">Valor da Manutenção:</span>
+                  <span className="text-primary font-semibold">{selectedService.maintenancePrice}</span>
+                </div>
+              )}
+
               <p className="text-muted-foreground leading-relaxed">
                 {selectedService.description}
               </p>
@@ -172,7 +286,7 @@ const ServicesSection = () => {
               </div>
 
               <a
-                href="https://wa.me/554892018071"
+                href="https://wa.me/554891308875"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp w-full flex items-center justify-center gap-2"
@@ -203,15 +317,15 @@ const ServiceCard = ({ service, index, onClick }: ServiceCardProps) => {
       onClick={onClick}
       className="flex-shrink-0 w-72 lg:w-full snap-center cursor-pointer group"
     >
-      <div className="card-elegant overflow-hidden h-full">
+      <div className="card-elegant overflow-hidden h-full flex flex-col">
         {/* Image */}
-        <div className="relative h-56 overflow-hidden">
+        <div className="relative h-56 overflow-hidden flex-shrink-0">
           <img
             src={service.image}
             alt={service.name}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-transparent to-transparent" />
           
           {/* Price badge */}
           <div className="absolute top-4 right-4 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
@@ -220,7 +334,7 @@ const ServiceCard = ({ service, index, onClick }: ServiceCardProps) => {
         </div>
 
         {/* Content */}
-        <div className="p-6">
+        <div className="p-6 flex flex-col flex-grow">
           <h3 className="text-xl font-serif font-semibold mb-2 group-hover:text-primary transition-colors">
             {service.name}
           </h3>
@@ -230,9 +344,11 @@ const ServiceCard = ({ service, index, onClick }: ServiceCardProps) => {
             <span>{service.duration}</span>
           </div>
 
-          <button className="text-sm font-medium text-primary hover:underline underline-offset-4 transition-all">
-            Ver Detalhes →
-          </button>
+          <div className="mt-auto">
+            <button className="text-sm font-medium text-primary hover:underline underline-offset-4 transition-all">
+              Ver Detalhes →
+            </button>
+          </div>
         </div>
       </div>
     </motion.div>

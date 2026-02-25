@@ -6,6 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import FAQSection from "@/components/FAQSection";
 import FooterSection from "@/components/FooterSection";
 import FloatingCTA from "@/components/FloatingCTA";
+import CoursesSection from "@/components/CoursesSection";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <ProblemSolutionSection />
       <AboutSection />
       <ServicesSection />
+      <CoursesSection />
       <FAQSection />
       <FooterSection />
       <FloatingCTA />
